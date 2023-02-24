@@ -4,4 +4,97 @@
 
 body {
     margin: 0;
+    font-family: "Inter", sans-serif;
+    color: #283618;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+h3,
+p {
+    margin: 0;
+}
+
+h3 {
+    font-size: clamp(1rem, 0.8438rem + 0.5vw, 1.125rem);
+}
+
+.container {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #606c38;
+}
+
+.nav--icon {
+    height: 60px;
+}
+
+.nav--title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.card {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    padding: 2em 0;
+}
+
+.card--image {
+    width: 80%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.card:nth-child(3) {
+    border-top: solid 1px gray;
+    border-bottom: solid 1px gray;
+}
+
+.card--geo {
+    display: flex;
+    gap: 5px;
+    margin-top: 1em;
+    width: 100%;
+}
+
+.card--geo a {
+    color: #606c38;
+    text-decoration: underline;
+}
+
+.card--description {
+    max-width: 50ch;
+}
+
+@media (min-width: 620px) {
+    .card {
+        flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 32px;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .card--geo {
+        margin: 0;
+    }
 }
