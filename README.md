@@ -1,4 +1,4 @@
-# Travel-journey
+# My Italy Travel Journal
 Solo project assigned by Scrimba's Learn React for Free course.
 
 This project basically let me practice the topics that were taught in the second section of the course which are bulding reusable components and using map to dynamically call the data from another page.
